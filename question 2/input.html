@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Field Document</title>
+  </head>
+  <body>
+    <br/>
+    <h2>Input Fields</h2>
+    <div class="form-group">
+        <input type="text" class="input" id="input1" placeholder="Input Field 1" />
+    </div>
+    <br/>
+    <div class="form-group">
+        <input type="text" class="input" id="input2" placeholder="Input Field 2" />
+    </div>
+    <br/>
+    <button onclick="copyInput()">Copy Input 1</button>
+
+    <script>
+        function copyInput(){
+          const ele = document.getElementsByClassName("input");
+          ele[1].value = ele[0].value;
+        }
+    </script>
+</body>
+</html>
